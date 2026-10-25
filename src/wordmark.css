@@ -1,0 +1,49 @@
+/* Scoped styles for the @vectrum/brand <Wordmark>. Colors arrive as inline --vb-wm-* variables. */
+
+.vb-wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.18em;
+  font-size: 22px;
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--vb-wm-fg, #2E1A4A);
+}
+
+.vb-wordmark[data-size="sm"] { font-size: 16px; }
+.vb-wordmark[data-size="lg"] { font-size: 30px; }
+
+.vb-wordmark__vectrum {
+  font-family: var(--vb-wordmark-font-display, inherit);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.vb-wordmark__for {
+  font-family: var(--vb-wordmark-font-display, inherit);
+  font-size: 0.68em;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  opacity: 0.75;
+}
+
+.vb-wordmark__aec {
+  font-family: var(--vb-wordmark-font-sans, inherit);
+  font-size: 0.68em;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.vb-wordmark__pill {
+  font-family: var(--vb-wordmark-font-sans, inherit);
+  font-size: max(10px, 0.4545em);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2em 0.8em;
+  border: 1px solid var(--vb-wm-pill-border, transparent);
+  border-radius: 9999px;
+  background: var(--vb-wm-pill-bg, transparent);
+  color: var(--vb-wm-pill-fg, inherit);
+}

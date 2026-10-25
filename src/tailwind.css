@@ -1,0 +1,67 @@
+/* Tailwind 4 theme for @vectrum/brand.
+   Usage (after tailwindcss):
+     @import "tailwindcss";
+     @import "@vectrum/brand/tailwind.css";
+   Colors resolve through the --vb-* custom properties, so [data-theme="dark"] switches the
+   semantic colors without rebuilding utilities. */
+
+@import "./tokens.css";
+
+@theme inline {
+  /* Core palette (BRAND.md) */
+  --color-iron-ore: var(--vb-iron-ore);
+  --color-honeypot-gold: var(--vb-honeypot-gold);
+  --color-clementine: var(--vb-clementine);
+  --color-clay-terracotta: var(--vb-clay-terracotta);
+  --color-imperial-purple: var(--vb-imperial-purple);
+  --color-midnight-violet: var(--vb-midnight-violet);
+
+  /* Product accents */
+  --color-product-connect: var(--vb-product-connect);
+  --color-product-connect-foreground: var(--vb-product-connect-foreground);
+  --color-product-pursuit: var(--vb-product-pursuit);
+  --color-product-pursuit-foreground: var(--vb-product-pursuit-foreground);
+  --color-product-contract: var(--vb-product-contract);
+  --color-product-contract-foreground: var(--vb-product-contract-foreground);
+  --color-product-exchange: var(--vb-product-exchange);
+  --color-product-exchange-foreground: var(--vb-product-exchange-foreground);
+
+  /* Semantic theme */
+  --color-background: var(--vb-background);
+  --color-card: var(--vb-card);
+  --color-foreground: var(--vb-foreground);
+  --color-muted-foreground: var(--vb-muted-foreground);
+  --color-muted-surface: var(--vb-muted-surface);
+  --color-border: var(--vb-border);
+  --color-input: var(--vb-input);
+  --color-accent: var(--vb-accent);
+  --color-primary: var(--vb-primary);
+  --color-primary-foreground: var(--vb-primary-foreground);
+  --color-primary-hover: var(--vb-primary-hover);
+  --color-primary-pressed: var(--vb-primary-pressed);
+  --color-primary-border: var(--vb-primary-border);
+  --color-primary-soft: var(--vb-primary-soft);
+  --color-primary-soft-foreground: var(--vb-primary-soft-foreground);
+  --color-link: var(--vb-link);
+  --color-focus-ring: var(--vb-focus-ring);
+  --color-highlight: var(--vb-highlight);
+  --color-highlight-soft: var(--vb-highlight-soft);
+  --color-highlight-foreground: var(--vb-highlight-foreground);
+  --color-highlight-border: var(--vb-highlight-border);
+  --color-success: var(--vb-success);
+  --color-success-soft: var(--vb-success-soft);
+  --color-warning: var(--vb-warning);
+  --color-warning-soft: var(--vb-warning-soft);
+  --color-danger: var(--vb-danger);
+  --color-danger-soft: var(--vb-danger-soft);
+  --color-danger-hover: var(--vb-danger-hover);
+  --color-info: var(--vb-info);
+  --color-info-soft: var(--vb-info-soft);
+  --color-scrim: var(--vb-scrim);
+  --color-document: var(--vb-document);
+
+  /* Radius (prefixed so Tailwind's default rounded-* scale is untouched) */
+  --radius-brand-sm: var(--vb-radius-sm);
+  --radius-brand-md: var(--vb-radius-md);
+  --radius-brand-lg: var(--vb-radius-lg);
+}

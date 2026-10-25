@@ -1,0 +1,107 @@
+/* Vectrum for AEC brand tokens (@vectrum/brand).
+   Core palette: BRAND.md (October 2, 2026, canonical). Semantic themes: ported from
+   rouler-contract design-tokens. Keep in sync with src/tokens.ts (enforced by tests). */
+
+:root {
+  /* Core palette */
+  --vb-iron-ore: #4F4B49;
+  --vb-honeypot-gold: #F7BF4B;
+  --vb-clementine: #F08033;
+  --vb-clay-terracotta: #BD643F;
+  --vb-imperial-purple: #512888;
+  --vb-midnight-violet: #2E1A4A;
+  --vb-white: #FFFFFF;
+
+  /* Product accents. Exchange: owner decision 2026-10-25; white pill text is an accepted exception (4.15:1). */
+  --vb-product-connect: var(--vb-imperial-purple);
+  --vb-product-connect-foreground: var(--vb-white);
+  --vb-product-pursuit: var(--vb-clementine);
+  --vb-product-pursuit-foreground: var(--vb-midnight-violet);
+  --vb-product-contract: var(--vb-honeypot-gold);
+  --vb-product-contract-foreground: var(--vb-midnight-violet);
+  --vb-product-exchange: var(--vb-clay-terracotta);
+  --vb-product-exchange-foreground: var(--vb-white);
+
+  /* Semantic theme: light */
+  --vb-background: #FAF7F2;
+  --vb-card: #FFFFFF;
+  --vb-foreground: #4F4B49;
+  --vb-muted-foreground: #625D5A;
+  --vb-muted-surface: #F3EEE8;
+  --vb-border: #D8D3D0;
+  --vb-input: #77706C;
+  --vb-accent: #F1EAF8;
+  --vb-primary: #F7BF4B;
+  --vb-primary-foreground: #2E1A4A;
+  --vb-primary-hover: #F08033;
+  --vb-primary-pressed: #F08033;
+  --vb-primary-border: #BD643F;
+  --vb-primary-soft: #FFF1C4;
+  --vb-primary-soft-foreground: #2E1A4A;
+  --vb-link: #512888;
+  --vb-focus-ring: #512888;
+  --vb-highlight: #F08033;
+  --vb-highlight-soft: #FEE9DB;
+  --vb-highlight-foreground: #2E1A4A;
+  --vb-highlight-border: #BD643F;
+  --vb-success: #1B6B45;
+  --vb-success-soft: #E3F1E8;
+  --vb-warning: #8F3F00;
+  --vb-warning-soft: #FCE7D6;
+  --vb-danger: #B42318;
+  --vb-danger-soft: #FBE7E4;
+  --vb-danger-hover: #8F1C13;
+  --vb-info: #1F5A8A;
+  --vb-info-soft: #E4EEF6;
+  --vb-scrim: rgba(46,26,74,.42);
+  --vb-document: #FFFFFF;
+
+  /* Spacing */
+  --vb-space-xs: 4px;
+  --vb-space-sm: 8px;
+  --vb-space-md: 16px;
+  --vb-space-lg: 24px;
+  --vb-space-xl: 32px;
+
+  /* Radius */
+  --vb-radius-sm: 6px;
+  --vb-radius-md: 8px;
+  --vb-radius-lg: 12px;
+  --vb-radius-pill: 9999px;
+}
+
+[data-theme="dark"] {
+  /* Semantic theme: dark */
+  --vb-background: #2E1A4A;
+  --vb-card: #3A2754;
+  --vb-foreground: #FAF7F2;
+  --vb-muted-foreground: #D8D3D0;
+  --vb-muted-surface: #432C60;
+  --vb-border: #6B3AA1;
+  --vb-input: #DBC8ED;
+  --vb-accent: #432C60;
+  --vb-primary: #F7BF4B;
+  --vb-primary-foreground: #2E1A4A;
+  --vb-primary-hover: #F9D477;
+  --vb-primary-pressed: #F08033;
+  --vb-primary-border: #F7BF4B;
+  --vb-primary-soft: #493814;
+  --vb-primary-soft-foreground: #F7BF4B;
+  --vb-link: #F7BF4B;
+  --vb-focus-ring: #F7BF4B;
+  --vb-highlight: #F08033;
+  --vb-highlight-soft: #4B2A20;
+  --vb-highlight-foreground: #FEE9DB;
+  --vb-highlight-border: #BD643F;
+  --vb-success: #5CC98E;
+  --vb-success-soft: #12352A;
+  --vb-warning: #F5A962;
+  --vb-warning-soft: #3D2412;
+  --vb-danger: #FF8A7A;
+  --vb-danger-soft: #3D1A1A;
+  --vb-danger-hover: #FFA597;
+  --vb-info: #8CC4F0;
+  --vb-info-soft: #13304A;
+  --vb-scrim: rgba(20,10,34,.72);
+  --vb-document: #342249;
+}
