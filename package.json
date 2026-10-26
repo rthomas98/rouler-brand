@@ -1,6 +1,6 @@
 {
   "name": "@vectrum/brand",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "Vectrum for AEC brand tokens, logo assets, and wordmark component.",
   "license": "UNLICENSED",
@@ -19,6 +19,16 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "default": "./dist/index.js"
+    },
+    "./tokens": {
+      "types": "./dist/tokens.d.ts",
+      "import": "./dist/tokens.js",
+      "default": "./dist/tokens.js"
+    },
+    "./contrast": {
+      "types": "./dist/contrast.d.ts",
+      "import": "./dist/contrast.js",
+      "default": "./dist/contrast.js"
     },
     "./tokens.css": "./src/tokens.css",
     "./tailwind.css": "./src/tailwind.css",

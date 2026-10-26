@@ -155,3 +155,7 @@ pnpm check:dist  # clean build to a temp dir; fails on missing, obsolete, or cha
 ```
 
 **Commit `dist/` with every source change.** Consumers install straight from git. There is intentionally no `prepare` script: pnpm 11 refuses to run lifecycle scripts of git-hosted dependencies unless each consumer allowlists the exact commit in `allowBuilds`.
+
+## React-free entry points
+
+`@vectrum/brand/tokens` exports the palette, product accents, semantic themes, spacing, and radius with no React dependency, and `@vectrum/brand/contrast` exports the WCAG helpers. Use these from React Native apps, build scripts, or any consumer that should not pull `Wordmark` into its bundle. The root entry re-exports everything including `Wordmark`.
